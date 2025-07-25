@@ -1,7 +1,7 @@
 const express = require('express')
 const Router = express.Router()
 const Comment = require('../models/Comment')
-const checkAuth = require('../middleware/checkauth')
+const checkAuth = require('../middleware/checkAuth')
 const jwt = require('jsonwebtoken')
 const mongoose = require('mongoose')
 
