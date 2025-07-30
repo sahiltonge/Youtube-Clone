@@ -21,7 +21,7 @@ Router.get('/own-video',checkAuth,async (req,res)=>{
         const token = req.headers.authorization.split(" ")[1]
         const user = await jwt.verify(token,'sahil')
         console.log(user)
-        const videos = await Video.find({user_id:user._id}).populate('user_id','channelName logoUrl')
+        const videos = await Video.find({user_id:user._id}).populate('user_id','channelName logoUrl subscribers')
         res.status(200).json({
             videos:videos
         })
