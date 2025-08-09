@@ -81,7 +81,7 @@ const Signup = () => {
     setProgressBar(true);
     try {
       const res = await axios.post(
-        "http://localhost:3000/auth/signup",
+        "https://capstone-9ln6.onrender.com/auth/signup",
         finalSignUpData
       );
       setProgressBar(false);

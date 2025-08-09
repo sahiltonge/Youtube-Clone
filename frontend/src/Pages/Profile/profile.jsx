@@ -16,7 +16,7 @@ const Profile = ({ sideNavbar }) => {
 
   const fetchProfileData = async () => {
     try {
-      const response = await axios.get(`http://localhost:3000/video/${id}/channel`);
+      const response = await axios.get(`https://capstone-9ln6.onrender.com/video/${id}/channel`);
       setVideos(response.data.video);          // videos array from response.data.video
       setUser(response.data.video[0]?.user);   // user object from first video
     } catch (err) {
@@ -36,7 +36,7 @@ const Profile = ({ sideNavbar }) => {
     if (!window.confirm("Are you sure you want to delete this video?")) return;
 
     try {
-      await axios.delete(`http://localhost:3000/video/delete/${videoId}`, { withCredentials: true });
+      await axios.delete(`https://capstone-9ln6.onrender.com/video/delete/${videoId}`, { withCredentials: true });
       toast.success("Video deleted successfully");
 
       // Remove deleted video from local state to update UI immediately

@@ -29,7 +29,7 @@ const Login = ({ setLoginModal }) => {
   setLoader(true);
   try {
     const res = await axios.post(
-      "http://localhost:3000/auth/login",
+      "https://capstone-9ln6.onrender.com/auth/login",
       loginField,
       {
         withCredentials: true,

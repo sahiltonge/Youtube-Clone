@@ -61,7 +61,7 @@ const VideoUpload = () => {
     setLoader(true);
     try {
       const res = await axios.post(
-        "http://localhost:3000/video/upload",
+        "https://capstone-9ln6.onrender.com/video/upload",
         inputField,
         { withCredentials: true }
       );

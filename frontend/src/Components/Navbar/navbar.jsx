@@ -58,7 +58,7 @@ const Navbar = ({ setsideNavbarFunc, sideNavbar }) => {
 
   const getLogoutFun = async () => {
     try {
-      await axios.post("http://localhost:3000/auth/logout", {}, { withCredentials: true });
+      await axios.post("https://capstone-9ln6.onrender.com/auth/logout", {}, { withCredentials: true });
       console.log("Logout successful");
     } catch (err) {
       console.log(err);
