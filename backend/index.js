@@ -5,7 +5,7 @@ const cookieParser = require('cookie-parser');
 const cors = require('cors');
 // Middleware
 app.use(cors({
-  origin: 'http://localhost:5173',
+  origin: 'https://utube-sahil.onrender.com',
   credentials: true
 }));
 app.use(express.json());
