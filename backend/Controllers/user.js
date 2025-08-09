@@ -3,12 +3,12 @@ const jwt = require('jsonwebtoken')
 const bcrypt = require('bcryptjs')
 
 
-const cookieOptions = res.cookie("token", token, {
-    httpOnly: true,
-    sameSite: "none", // for cross-site requests (Vercel ↔ Render)
-    secure: true      // must be true for HTTPS
-}).json({ success: true });
+const cookieOptions = {
 
+    httpOnly:true,
+    secure:false,
+    sameSite:'Lax'
+}
 
 exports.signUp = async (req, res) => {
     try {
@@ -68,11 +68,11 @@ exports.Login = async (req, res) => {
       const token = jwt.sign({ userId: user._id }, 'sahil');
 
       // Set cookie with httpOnly and sameSite options
-      res.cookie('token', token, {
-        httpOnly: true,
-        secure: false,    // set to true if using HTTPS
-        sameSite: 'Lax',
-      });
+       res.cookie("token", token, {
+      httpOnly: true,
+      secure: true, // true for HTTPS
+      sameSite: "none" // required for cross-site cookies
+    });
 
       res.json({
         msg: 'Logged in Successfully',
