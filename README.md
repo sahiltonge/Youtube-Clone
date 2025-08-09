@@ -14,10 +14,24 @@ This app allows users to **upload videos**, **view videos**, **like/dislike vide
 - **Live Url (Render)**:**[[https://utube-sahil.onrender.com](https://utube-sahil.onrender.com)]**
 
 
+---
  **GitHub Link**
 
 - https://github.com/sahiltonge/Youtube-Clone.git
 
+---
+**Demo Video Link**
+
+-https://www.loom.com/share/44c01e905be546dca730d9b0dbea8558?sid=4c052e8f-b034-4d20-89b4-8d7ba0d0e825
+
+
+---
+## Demo User for Login
+
+-email: render@gamil.com
+-pass:  render
+
+---
 
 ##  Features
 
