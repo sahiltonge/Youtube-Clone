@@ -14,6 +14,9 @@ This app allows users to **upload videos**, **view videos**, **like/dislike vide
 - **Live Url (Render)**:**[https://utube-sahil.onrender.com]**
 
 
+ **GitHub Link**
+
+- https://github.com/sahiltonge/Youtube-Clone.git
 
 
 ##  Features
@@ -129,15 +132,11 @@ npm run dev
 
 ---
 
-## 💡 Author
+##  Author
 
 **Sahil Tonge**
-📧 Email: [sahiltonge85@gmail.com](mailto:sahiltonge85@gmail.com)
-📍 Nagpur, Maharashtra
+ Email: [sahiltonge85@gmail.com]
+ Nagpur, Maharashtra
 
 ```
-
----
-
-If you want, I can **add a “How to Deploy” section** for **Vercel + Render** so your YouTube clone can run live. That would make the README even better for others to try your project online.
-```
+**GitHub Link**
