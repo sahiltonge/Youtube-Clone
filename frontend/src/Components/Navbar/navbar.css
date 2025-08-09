@@ -1,0 +1,200 @@
+.navbar {
+    height: 56px;
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #000;
+    border-bottom: 1px solid #222;
+    z-index: 10;
+}
+
+/* Left Section */
+.navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.navbarHamberger {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.navbarHamberger:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.navbar-youtubeImg {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-youtubeTitle {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0.5px;
+}
+
+/* Middle Section */
+.navbar-middle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+    max-width: 600px;
+    margin: 0 20px;
+    justify-content: center;
+}
+
+.navbar-searchbox {
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+}
+
+.navbar-searchbox-input {
+    flex: 1;
+    height: 40px;
+    padding: 0 16px;
+    font-size: 16px;
+    background-color: #121212;
+    color: white;
+    border: 1px solid #3a3939;
+    border-radius: 20px 0 0 20px;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.navbar-searchbox-input:focus {
+    border-color: #aaa;
+}
+
+.navbar-searchbox-input::placeholder {
+    color: #bbb;
+}
+
+.navbar-searchIconBox {
+    width: 60px;
+    height: 40px;
+    background-color: #2a2a2a;
+    border: 1px solid #2a2a2a;
+    border-left: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 20px 20px 0;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.navbar-searchIconBox:hover {
+    background-color: #444;
+}
+
+.navbar-mic {
+    width: 40px;
+    height: 40px;
+    background-color: #2a2a2a;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.navbar-mic:hover {
+    background-color: #444;
+}
+
+/* Right Section */
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    position: relative;
+    margin-right: 25px;
+}
+
+.navbar-right-logo {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+    border: 2px solid white;
+    transition: transform 0.2s ease;
+}
+
+.navbar-right-logo:hover {
+    transform: scale(1.05);
+}
+
+.navbar-modal {
+    position: absolute;
+    top: 48px;
+    right: 0;
+    background-color: #222;
+    min-width: 160px;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    z-index: 20;
+}
+
+.navbar-modal-option {
+    padding: 12px 16px;
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.navbar-modal-option:hover {
+    background-color: #333;
+}
+
+.navbar-signin {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #3ea6ff;
+    background-color: transparent;
+    border: 1px solid #3a3a3a;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.navbar-signin:hover {
+    background-color: rgba(62, 166, 255, 0.1);
+    border-color: #3ea6ff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .navbar-middle {
+        display: none;
+    }
+
+    .navbar-right {
+        gap: 10px;
+    }
+}

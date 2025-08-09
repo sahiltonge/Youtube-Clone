@@ -1,0 +1,103 @@
+.videoUpload {
+  padding-top: 56px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 92vh;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #000;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+.uploadBox {
+  width: 45%;
+  border-radius: 8px;
+  margin-top: 20px;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.1);
+  padding: 25px;
+  background-color: #111;
+  transition: all 0.3s ease;
+}
+
+.uploadVideoTitle {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  font-weight: 600;
+  color: #f1f1f1;
+  margin-bottom: 10px;
+}
+
+.uploadForm {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 30px;
+  align-items: center;
+  width: 100%;
+}
+
+.uploadFormInputs {
+  width: 70%;
+  height: 45px;
+  padding: 0 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #1c1c1c;
+  border: 1px solid #444;
+  border-radius: 6px;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.uploadFormInputs:focus {
+  border-color: #888;
+  background-color: #2a2a2a;
+}
+
+.uploadBtns {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.uploadBtn-form {
+  padding: 10px 24px;
+  border: 1px solid #fff;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #fff;
+  background-color: transparent;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.uploadBtn-form:hover {
+  background-color: #fff;
+  color: #000;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .uploadBox {
+    width: 90%;
+  }
+
+  .uploadFormInputs {
+    width: 90%;
+  }
+
+  .uploadVideoTitle {
+    font-size: 22px;
+  }
+}

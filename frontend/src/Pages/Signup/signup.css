@@ -1,0 +1,155 @@
+.signup {
+  margin-top: 56px;
+  color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+  color: white;
+
+  position: fixed; /* Keeps signup fixed in place */
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.signup_card {
+  width: 40%;
+  border: 1px solid white;
+  padding: 15px 25px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.signUp_title {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 32px;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.signUp_Inputs {
+  gap: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.signUP_Inputs_inp {
+  width: 60%;
+  height: 45px;
+  color: white;
+  padding: 0 10px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  background-color: #222222;
+  transition: border-color 0.3s ease-in-out;
+  outline: none;
+}
+
+.signUP_Inputs_inp:focus {
+  border-color: #888;
+  background-color: #1a1a1a;
+}
+
+.image_upload_signup {
+  display: flex;
+  gap: 30px;
+}
+
+.image_upload_signup_div {
+  width: 100px;
+  height: 100px;
+}
+
+.image_default_signUp {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #666;
+}
+
+.signUpBtns {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.signUpBtn {
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 5px;
+  border: 1px solid white;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.signUpBtn:hover {
+  background-color: white;
+  color: black;
+}
+
+.signup_card {
+  width: 40%;
+  min-width: 300px; /* prevents card from shrinking too much */
+  max-width: 500px; /* prevents oversized card on big screens */
+
+  /* Keep existing styles below */
+  border: 1px solid white;
+  padding: 15px 25px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Extra responsive tweaks for small devices */
+@media (max-width: 768px) {
+  .signup_card {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .signup_card {
+    width: 90%;
+    padding: 10px 15px;
+  }
+
+  .signUP_Inputs_inp {
+    width: 90%;
+  }
+}
+
+/* Prevent scrolling when signup is active */
+body.modal-open {
+  overflow: hidden;
+}

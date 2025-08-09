@@ -1,0 +1,299 @@
+.video{
+    background-color: black;
+    margin-top: 56px;
+    display: flex;
+    padding: 30px 0;
+    justify-content: center;
+
+}
+
+.videoPostSection{
+    width: 100%;
+    max-width: 875px;
+    display: flex;
+    flex-direction: column;
+}
+
+.video-youtube{
+    width: 100%;
+}
+
+.video-youtube-player{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.video-youtubeAbout{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.video-utubeTitle{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.youtube-video-profileBlock{
+    display: flex;
+    justify-content: space-between ;
+    margin-top: 10px;
+}
+
+.youtube-video-profileBlock-left{
+    display: flex;
+    gap: 15px;
+}
+
+.utube-video-profile-left-img{
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.utube-video-profile-left-image{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 1px solid white;
+    
+}
+
+.youtube-sub{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.user{
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+.date{
+    font-size: 14px;
+    color: #AAAAAA;
+}
+
+.subBtnYoutube{
+    background-color: white;
+    color: black;
+    padding: 0px 16px;
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 36px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.youtube-video-likeblock {
+    display: flex;
+    gap: 10px;
+    background-color: gray;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    border-radius: 18px;
+    cursor: pointer;
+}
+
+.video-like {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: white; /* default icon and text color */
+    transition: color 0.3s ease;
+}
+
+.video-like.liked {
+    color: #0073e6; /* blue color when liked */
+}
+
+.number-like {
+    font-weight: 500;
+}
+
+.divider {
+    width: 0px;
+    height: 20px;
+    border: 1px solid;
+    opacity: 0.5;
+}
+
+.video-dislike {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: white; /* default icon and text color */
+    transition: color 0.3s ease;
+}
+
+.video-dislike.disliked {
+    color: #e60000; /* red color when disliked */
+}
+
+.youtube-video-about{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: gray;
+    width: 100%;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    gap: 10px;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+.utube-comment-section{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.comment-sectionTitle{
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+}
+
+.youtube-SelfComment{
+    display: flex;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.video-selfcommentProfile{
+   width: 35px;
+   height: 35px;
+   border-radius: 50%;
+    
+}
+
+.addComment{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+.addInputComment{
+    width: 100%;
+    background-color: black;
+    color: white;
+    height: 35px;
+    border: none;
+    font-size: 16px;
+    border-bottom: 1px solid gray;
+    &:focus{
+        outline: none;
+    }
+    &::placeholder{
+        font-size: 16px;
+    }
+}
+
+.canclesumbitcommit{
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-top: 10px;
+    color: white;
+}
+
+.cancle{
+    padding: 8px 16px;
+    border-radius: 18px;
+    border: 1px solid;
+    cursor: pointer;
+    &:hover{
+        background-color: white;
+        color: black;
+    }
+}
+
+.youtube-othersComment{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.others-commentSection{
+    display: flex;
+    flex-direction: column;
+    color:white;
+}
+
+.others-commentSectionHeader{
+    display: flex;
+    gap: 10px;
+}
+
+.channelName-comment{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.commentTimingsOthers{
+    font-size: 14px;
+    color: #AAAAAA;
+}
+
+.otherCommentSectionComment{
+    margin-top: 10px ;
+}
+
+
+
+/* ------------------------------ */
+.videoSuggestions{
+    width: 100%;
+    max-width: 406px;
+    padding: 10px 15px;
+    gap: 15px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.videoSuggestionsBlock{
+    display: flex;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.video-suggestion-thumbnail{
+    width: 168px;
+    height: 94px;
+    border:2px solid white;
+}
+
+.video-suggestion-thumbnail-img{
+    width: inherit;
+}
+
+.video-suggestions-about{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.video-suggestion-about-title{
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 5px ;
+}
+
+.video-suggestions-about-profile{
+    color: gray;
+    font-size: 12px;
+}
